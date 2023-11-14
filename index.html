@@ -1,79 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=   , initial-scale=1.0" />
-    <title>Web Studio</title>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Modern normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-    <!-- Our styleseet-->
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <!-- Header content -->
-    <header class="page-header">
-      <div class="container header-container">
-        <nav class="page-header-nav">
-          <a class="page-header-logo-link" href="./index.html"
-            >Web<span class="page-header-logo-link-item">Studio</span></a
-          >
-          <ul class="page-header-nav-list">
-            <li class="page-header-nav-list-item">
-              <a
-                class="page-header-nav-link header-first-item"
-                href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="page-header-nav-list-item">
-              <a class="page-header-nav-link" href="">Portfolio</a>
-            </li>
-            <li class="page-header-nav-list-item">
-              <a class="page-header-nav-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="contacts">
-          <ul class="contacts-list">
-            <li class="contacts-list-item">
-              <a class="contacts-list-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-list-item">
-              <a class="contacts-list-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
-    <main>
-      <!-- Hero section -->
-      <section class="hero-section section">
-        <div class="container">
-          <h1 class="hero-section-title">
-            Effective Solutions for Your Business
-          </h1>
-          <button class="hero-section-button" type="button">
-            Order Service
-          </button>
-        </div>
-      </section>
-      <!-- Advantages section -->
 
-      <section class="advantages-section section">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+  <title>Web Studio</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <!-- Modern normalize -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+  <!-- Our styleseet-->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Header content -->
+  <header class="page-header">
+    <div class="container header-container">
+      <nav class="page-header-nav">
+        <a class="page-header-logo-link" href="./index.html">Web<span
+            class="page-header-logo-link-item">Studio</span></a>
+        <ul class="page-header-nav-list">
+          <li class="page-header-nav-list-item">
+            <a class="page-header-nav-link header-first-item" href="./index.html">Studio</a>
+          </li>
+          <li class="page-header-nav-list-item">
+            <a class="page-header-nav-link" href="">Portfolio</a>
+          </li>
+          <li class="page-header-nav-list-item">
+            <a class="page-header-nav-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="mobile-open-btn" type="button">
+        <svg class="mobile-open-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <address class="contacts">
+        <ul class="contacts-list">
+          <li class="contacts-list-item">
+            <a class="contacts-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contacts-list-item">
+            <a class="contacts-list-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </header>
+  <main>
+    <!-- Hero section -->
+    <section class="hero-section section">
+      <div class="container">
+        <h1 class="hero-section-title">
+          Effective Solutions for Your Business
+        </h1>
+        <button class="hero-section-button" type="button">
+          Order Service
+        </button>
+      </div>
+    </section>
+    <!-- Advantages section -->
+
+    <section class="advantages-section section">
         <div class="container">
           <h2 class="advantages-title visually-hidden">Advantages</h2>
           <ul class="advantages-list">
@@ -148,14 +142,15 @@
           </ul>
         </div>
       </section>
-      <!-- Team section -->
-      <section class="team-section section">
-        <div class="container">
+    <!-- Team section -->
+    <section class="team-section section">
+        <div class="container team-section-container">
           <h2 class="team-section-title">Our Team</h2>
           <ul class="team-section-list">
             <li class="team-section-list-item">
               <img
                 class="team-section-img"
+                srcset="./images/mark-guerrero.jpg 1x , ./images/mark-guerrero@2x.jpg 2x"
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -219,6 +214,7 @@
             <li class="team-section-list-item">
               <img
                 class="team-section-img"
+                srcset="./images/tom-ford.jpg 1x , ./images/tom-ford@2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -281,6 +277,7 @@
             </li>
             <li class="team-section-list-item">
               <img
+              srcset="./images/camila-garcia.jpg 1x , ./images/camila-garcia@2x.jpg 2x"
                 class="team-section-img"
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia"
@@ -345,6 +342,7 @@
             <li class="team-section-list-item">
               <img
                 class="team-section-img"
+                srcset="./images/daniel-wilson.jpg 1x , ./images/daniel-wilson@2x.jpg 2x"
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -408,8 +406,8 @@
           </ul>
         </div>
       </section>
-      <!-- Portfolio section -->
-      <section class="portfolio-section section">
+    <!-- Portfolio section -->
+    <section class="portfolio-section section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -417,10 +415,10 @@
               <div class="image-container">
                 <img
                   class="portfolio-image"
+                  srcset="./images/banking-app.jpg 1x , ./images/banking-app@2x.jpg 2x"
                   src="./images/banking-app.jpg"
                   alt="banking app design"
-                  width="360"
-                  height="388"
+                 
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -437,10 +435,10 @@
               <div class="image-container">
                 <img
                   class="portfolio-image"
+                  srcset="./images/cashless-payment.jpg 1x , ./images/cashless-payment@2x.jpg 2x"
                   src="./images/cashless-payment.jpg"
                   alt="payment app design"
-                  width="360"
-                  height="388"
+                
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -457,10 +455,10 @@
               <div class="image-container">
                 <img
                   class="portfolio-image"
+                  srcset="./images/meditation-app.jpg 1x , ./images/meditation-app@2x.jpg 2x"
                   src="./images/meditation-app.jpg"
                   alt="meditation app design"
-                  width="360"
-                  height="388"
+                 
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -477,10 +475,10 @@
               <div class="image-container">
                 <img
                   class="portfolio-image"
+                  srcset="./images/taxi-service.jpg 1x , ./images/taxi-service@2x.jpg 2x"
                   src="./images/taxi-service.jpg"
                   alt="taxi driver"
-                  width="360"
-                  height="388"
+                  
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -497,10 +495,10 @@
               <div class="image-container">
                 <img
                   class="portfolio-image"
+                  srcset="./images/screen-illustrations.jpg 1x , ./images/screen-illustrations@2x.jpg 2x"
                   src="./images/screen-illustrations.jpg"
                   alt="screen illustrations"
-                  width="360"
-                  height="388"
+                  
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -517,10 +515,10 @@
               <div class="image-container">
                 <img
                   class="portfolio-image"
+                  srcset="./images/online-courses.jpg 1x , ./images/online-courses@2x.jpg 2x"
                   src="./images/online-courses.jpg"
                   alt="happy girl"
-                  width="360"
-                  height="388"
+                  
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -536,9 +534,9 @@
           </ul>
         </div>
       </section>
-    </main>
-    <!-- Footer -->
-    <footer class="page-footer">
+  </main>
+  <!-- Footer -->
+  <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-logo-text">
           <a class="page-footer-logo-link" href="./index.html"
@@ -627,7 +625,8 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+  <!-- BACKDROP -->
+  <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
@@ -711,5 +710,63 @@
         </form>
       </div>
     </div>
-  </body>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <div class="container mobile-menu-container">
+      <button class="mobile-menu-close-btn">
+        <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-list-item">Studio</li>
+          <li class="mobile-menu-list-item">Portfolio</li>
+          <li class="mobile-menu-list-item">Contacts</li>
+        </ul>
+      </nav>
+      <address class="mobile-menu-contacts">
+        <ul class="mobile-menu-contacts-list">
+          <li class="mobile-menu-contacts-list-item">
+            <a class="mobile-menu-contacts-link" href="" tel:+110001111111><span
+                class="mobile-menu-contacts-list-first-item">+11 (000) 111-11-11</span></a>
+          </li>
+          <li class="mobile-menu-contacts-list-item">
+            <a class="mobile-menu-contacts-link" href="href=" mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-menu-social-list">
+        <li class="mobile-menu-social-list-item">
+          <a href="" class="mobile-menu-social-link">
+            <svg class="mobile-menu-social-list-icon" width="24" heigh="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a href="" class="mobile-menu-social-link">
+            <svg class="mobile-menu-social-list-icon" width="24" heigh="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a href="" class="mobile-menu-social-link">
+            <svg class="mobile-menu-social-list-icon" width="24" heigh="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a href="" class="mobile-menu-social-link">
+            <svg class="mobile-menu-social-list-icon" width="24" heigh="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
 </html>
