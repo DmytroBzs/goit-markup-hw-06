@@ -468,7 +468,11 @@ h3 {
       ),
       url(../images/hero/desktop-bg.jpg);
     padding: 188px;
+    height: 600px;
   }
+    .hero-section-title {
+      margin-bottom: 48px;
+    }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
   .hero-section {
@@ -529,6 +533,9 @@ h3 {
   .advantage-icon-container {
     display: flex;
   }
+    .advantages-list-title {
+      font-size: 20px;
+    }
   .advantage-icon-container {
     display: flex;
     align-items: center;
@@ -917,6 +924,7 @@ h3 {
   .footer-subscribe {
     margin-left: 80px;
   }
+    
 }
 /* /FOOTER DESKTOP STYLES */
 /* BACKDROP MOBILE STYLES */
